@@ -17,6 +17,7 @@
 			<h4><div id="user">{{user.username}}<img id="icono" src="https://image.freepik.com/free-icon/user-image-with-black-background_318-34564.jpg" width="45px"></div></h4>
 			<h4 class="row">
 
+				<li class="navbase1"><a href="{%url 'inicio2'%}">Inicio</a></li>
 				<li class="navbase1"><a href="{%url 'futbolista'%}">Futbolistas</a></li>
 				<li class="navbase1"><a href="{%url 'entrenador'%}">Entrenadores</a></li>
 				<li class="navbase1"><a href="{%url 'equipo'%}">Equipos</a></li>
@@ -38,18 +39,12 @@
 			</h4>	
 		</ul>
 	</nav>
-	<div id="conten2">
-		<h5>
-			{% block contenido %}
-			{% endblock %}
+		<div id="conten2">
+			<h5>
+				{% block contenido %}
+				{% endblock %}
 
-		</h5>
-	</div>
-	<div class="conten2">
-		<h5>
-			{% block conten %}
-			{% endblock %}
-		</h5>
-	</div>
+			</h5>
+			</div>
 </body>
 </html>

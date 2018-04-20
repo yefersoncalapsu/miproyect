@@ -82,8 +82,9 @@ body{
 }
 #conten2{
 	margin-top: 180px;
-	margin-left: 300px;
 	text-align: right;
+	margin-left: 250px;
+	margin-right: 250px;
 	color: white;
 	font: oblique bold 120% cursive;
 	background-color: rgba(0,0,000,0.6);
