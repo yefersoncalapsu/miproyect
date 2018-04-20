@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}
+	{{eq.nombre}}
+{% endblock %}
+{% block contenido %}
+	
+		<h1>Detalle</h1>
+		<p><b>Nombre:</b>  {{eq.nombre}}</p>
+		<p><b>Equipo:</b> {{eq.equipo}}</p>
+		<br>
+		<button><a href=" {% url 'editar_equipo' id_equi=eq.id %} ">Editar</a></button>
+		<button><a href=" {% url 'eliminar_equipo' id_equi=eq.id %} ">Eliminar</a></button>
+	</div>
+	<a href="{% url 'equipo' %}">Regresar a la Lista</a>
+
+{% endblock %}
